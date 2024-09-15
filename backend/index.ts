@@ -7,3 +7,5 @@ Bun.serve({
   },
   port: process.env.PORT || 3000,
 });
+
+console.log(`Bun server is running on port ${process.env.PORT || 3000}`);
