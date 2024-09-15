@@ -1,0 +1,13 @@
+{
+  "name": "monorepo-bun",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "bun run --cwd ./frontend dev",
+    "dev:backend": "bun run --cwd ./backend index.ts",
+    "dev": "bun run dev:frontend & bun run dev:backend"
+  }
+}
