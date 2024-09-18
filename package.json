@@ -7,7 +7,10 @@
   ],
   "scripts": {
     "dev:frontend": "bun run --cwd ./frontend start",
+    "build:frontend": "bun run --cwd ./frontend build",
     "dev:backend": "bun run --cwd ./backend start",
-    "start": "bun run dev:frontend & bun run dev:backend"
+    "build:backend": "bun run --cwd ./backend build",
+    "start": "bun run dev:frontend & bun run dev:backend",
+    "build": "bun run build:frontend & bun run build:backend"
   }
 }
